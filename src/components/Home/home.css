@@ -67,6 +67,25 @@
     margin-bottom: var(--mb-2);
 }
 
+.highlight {
+    background-color: transparent;
+    animation-name: highlightAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlightAnimation {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #ffff00;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+
 
 .home__img {
     background: url(../../assests/profile.jpg);

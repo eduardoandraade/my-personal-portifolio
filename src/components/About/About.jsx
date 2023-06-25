@@ -17,8 +17,8 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">Sou um desenvolvedor front-end com experiência no ecossistema JavaScript e apaixonado por design e tecnologia. Meu objetivo é criar páginas web modernas,
-                responsivas e otimizadas para SEO, com o intuito de oferecer uma experiência de alta qualidade aos usuários. Neste ano, estou concluindo minha formação em marketing, e meu foco é combinar essas duas habilidades para entregar projetos de alto valor aos clientes. Estou em busca constante de aprendizado para impulsionar meu crescimento profissional. 
-                Convido você a explorar meu portfólio e conhecer alguns dos projetos que desenvolvi.</p>
+                responsivas e otimizadas para SEO. Neste ano, estou concluindo minha formação em marketing, e meu foco é combinar essas duas habilidades para entregar projetos de alto valor aos clientes. Estou em busca constante de aprendizado para impulsionar meu crescimento profissional e pessoal.
+                Convido você a explorar meu portfólio e conhecer alguns dos projetos que desenvolvi<span className='details_point'>.</span></p>
             
                 <a download="" href={CV} className="button button--flex" style={{ justifyContent: 'center' }}>Download CV
                 <svg

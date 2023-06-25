@@ -25,7 +25,7 @@
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
-  --tiny-font-size: 0.625rem;
+  --tiny-font-size: 0.750rem;
   
   /* ------ Font Weight ------ */
   --font-normal: 400;
@@ -113,7 +113,7 @@ img {
 /* ====== REUSABLE CSS CLASSES ====== */
 
 .section {
-  padding: 6rem 0 2rem;
+  padding: 3rem 0 2rem;
 }
 
 .section__title {
