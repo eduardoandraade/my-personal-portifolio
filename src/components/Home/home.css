@@ -32,35 +32,14 @@
     margin-bottom: var(--mb-0-25);
 }
 
-.details__title {
-    cursor: default;
-    font-size: var(--big-font-size);
-    color: #83B2FF;
-    transition: color 0.3s;
-}
-
-.details__title:hover {
-    color: var(--title-color);
-  }
-
 
 .home__subtitle {
     position: relative;
     font-size: var(--h3-font-size);
-    padding-left: 5rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
 }
 
-.home__subtitle::before {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    background-color: var(--text-color);
-    left: 0;
-    top: 1rem;
-}
 
 .home__description {
     max-width: 400px;
@@ -158,14 +137,9 @@
     }
 
     .home__subtitle{
-        padding-left: 3.75rem;
         margin-bottom: var(--mb-1);
     }
 
-    .home__subtitle::before{
-        width: 42px;
-        top: 0.8rem;
-    }
 
     .home__description {
         max-width: initial;
