@@ -108,7 +108,19 @@
   .nav__toggle {
     font-size: 1.5rem;
     cursor: pointer;
+    animation-name: iconColorAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
+
+  @keyframes iconColorAnimation {
+    0% { color: #83B2FF; }
+    50% { color: #9db3d5; }
+    100% { color: #83B2FF; }
+  }
+
+  
 
   .nav__icon,
   .nav__close,

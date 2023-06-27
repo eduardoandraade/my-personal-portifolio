@@ -106,8 +106,8 @@
 }
 
 .services__modal-description {
-    font-size: var(--small-font-size);
-    padding: 0 2rem;
+    font-size: 0.800rem;
+    padding: 0 1rem;
     margin-bottom: var(--mb-2);
 }
 
@@ -162,6 +162,15 @@
   }
   
   @media screen and (max-width: 576px) {
+    .services__container {
+        grid-template-columns: max-content;
+    }
+
+    .services__content {
+        padding-right: 5rem;
+    }
+
+
     .services__modal-content {
         padding: 4.5rem 1.5rem 2.5rem;
     }
@@ -171,15 +180,3 @@
     }
   }
   
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-    .services__container {
-        grid-template-columns: max-content;
-    }
-
-    .services__content {
-        padding-right: 6rem;
-    }
-  
-  
-  }
