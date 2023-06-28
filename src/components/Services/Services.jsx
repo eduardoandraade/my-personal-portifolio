@@ -14,13 +14,14 @@ const Services = () => {
         <h2 className='section__title'>Serviços
             <span className='details__title'>.</span>
         </h2>
+        <span className='section__subtitle'>Sites profissionais | Blogs | Portfólios | Landing Pages | E-commerce.</span>
         
         <div className="services__container container grid">
             <div className="services__content">
                 <div>
                     <i class='uil uil-web-grid services__icon'></i>
                     <h3 className='services__title'>
-                        UI<br /> Design
+                        UI<br />Design
                     </h3>
                 </div>
 
@@ -33,31 +34,31 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
                         <h3 className="services__modal-title">UI Design</h3>
-                        <p className="services__modal-description">Desenho interfaces de usuário atraentes e intuitivas para sites e soluções digitais, com o objetivo de aprimorar a experiência e a usabilidade do usuário.</p>
+                        <p className="services__modal-description">Desenho interfaces de usuário atraentes e intuitivas para sites, com foco na experiência e a usabilidade do usuário.</p>
                     
                         <ul className="services__modal-services grid">
                         <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Crio layouts, cores, tipografia e elementos visuais.</p>
+                                <p className="services__modal-info">Layouts, cores, tipografia e elementos visuais.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Desenvolvo padrões visuais e de identidade com a marca.</p>
+                                <p className="services__modal-info">Padrões visuais e de identidade com a sua marca.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Adapto a interface para diferentes dispositivos.</p>
+                                <p className="services__modal-info">Interface responsiva para diferentes dispositivos.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
                                 
-                                <p className="services__modal-info">Faço testes de funcionalidade e usabilidade.</p>
+                                <p className="services__modal-info">Testes de funcionalidade e usabilidade.</p>
                             </li>
                         </ul>
                     </div>
@@ -81,31 +82,31 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
                         <h3 className="services__modal-title">Desenvolvimento Web</h3>
-                        <p className="services__modal-description">Desenho interface de forma que ela seja clara, objetiva e principalmente intuitiva para o usuário.</p>
+                        <p className="services__modal-description">Desenvolvo sites profissionais, blogs, portfólios, landing pages e e-commerce.</p>
                     
                         <ul className="services__modal-services grid">
                         <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Eu desenvolvo interface de usuario</p>
+                                <p className="services__modal-info">Design personalizado e intuitivo.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">I created ux element interactions</p>
+                                <p className="services__modal-info">Responsivo para todos os tamanhos de dispositivos.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">I position your company brand</p>
+                                <p className="services__modal-info">Sites otimizados para SEO e visibilidade.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Manutenção e atualização de sites.</p>
                             </li>
                         </ul>
                     </div>
@@ -129,31 +130,31 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
                         <h3 className="services__modal-title">Marketing Digital</h3>
-                        <p className="services__modal-description">Desenho interface de forma que ela seja clara, objetiva e principalmente intuitiva para o usuário.</p>
+                        <p className="services__modal-description">Estratégias personalizadas de marketing para impulsionar a presença online da sua empresa.</p>
                     
                         <ul className="services__modal-services grid">
                         <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Eu desenvolvo interface de usuario</p>
+                                <p className="services__modal-info">Gestão de mídias sociais.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">I created ux element interactions</p>
+                                <p className="services__modal-info">Planejamento e criação de conteúdo.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">I position your company brand</p>
+                                <p className="services__modal-info">Pesquisa de mercado e análise da concorrência.</p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className='uil uil-check-circle services__modal-icon'></i>
 
-                                <p className="services__modal-info">Design and mockups of products for companies.</p>
+                                <p className="services__modal-info">Email marketing atraente e intuitivo.</p>
                             </li>
                         </ul>
                     </div>

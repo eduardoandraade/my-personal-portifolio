@@ -1,0 +1,121 @@
+.work__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.1rem;
+    margin-bottom: var(--mb-2);
+}
+
+.work__item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: .25rem .75rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.work__item:hover {
+    background-color: #83B2FF;
+    color: var(--container-color);
+}
+
+.work__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.work__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+
+.work__img {
+    width: 395px;
+    height: 230px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--mb-1);
+}
+
+.work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.5rem;
+}
+
+.work__links {
+    display: flex;
+    gap: .5rem;
+}
+
+.work__button {
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.work__button-icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.work__button:hover .work__button-icon {
+    transform: translateY(-0.25rem);
+    color: #83B2FF;
+}
+
+/* active work */
+.active-work {
+    background-color: #83B2FF;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .work__container {
+        gap: 1.25rem;
+    }
+
+    .work__card {
+        padding: 1rem;
+    }
+
+    .work_img {
+        margin-bottom: .75rem;
+    }
+
+    .work__title {
+        margin-bottom: .25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work__container {
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work__container {
+        grid-template-columns: 1fr;
+    }
+
+    .work__img {
+        width: 100%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .work__item {
+        font-size: var(--samll-font-size);
+    }
+
+    .work__filters {
+        column-gap: .25rem;
+    }
+}

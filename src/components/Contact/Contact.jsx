@@ -4,7 +4,7 @@ import './contact.css'
 
 
 const Contact = () => {
-    
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -22,12 +22,14 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-        <h2 className="section__title">Contato</h2>
-        <span className='section__subtitle'>Vamos trabalhar juntos?</span>
+        <h2 className="section__title">Contato
+            <span className='details__title'>.</span>
+        </h2>
+        <span className='section__subtitle'>Procura uma presença online criativa? Vamos trabalhar juntos!</span>
 
         <div className="contact__container container grid">
             <div className="contact__content">
-                <h3 className='contact__title'>Fale Comigo.</h3>
+                <h3 className='contact__title'>Fale Comigo</h3>
 
                 <div className="contact__info">
                     <div className="contact__card">
@@ -69,7 +71,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__content">
-                <h3 className='contact__title'>Escreva sua ideia de projeto.</h3>
+                <h3 className='contact__title'>Escreva sua ideia de projeto</h3>
 
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
@@ -99,7 +101,7 @@ const Contact = () => {
                             className='contact__form-input' 
                             cols="30" 
                             rows="10"
-                            placeholder='Escreva seu projeto'
+                            placeholder='Escreva detalhadamente o seu projeto'
                         ></textarea>
                     </div>
 

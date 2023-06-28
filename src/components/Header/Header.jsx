@@ -3,13 +3,25 @@ import './header.css';
 
 const Header = () => {
 
+    /* ====== Change Background Header ====== */
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector(".header")
+        if (this.scrollY >= 80 ) header.classList.add
+        ("scroll-header");
+        else header.classList.remove("scroll-header")
+    })
+
     /* ====== Toggle Menu ====== */
     const [ Toggle, showMenu ] = useState(false);
+
 
   return (
     <header className="header">
         <nav className="nav container">
-            <a href="index.html" className='nav__logo active-link'>Dudu</a>
+            <a href="index.html" className='nav__logo active-link'>
+                Dudu
+                <span className='details__title'>.</span>
+            </a>
 
             <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <ul className="nav__list grid">
