@@ -38,6 +38,7 @@
     height: 230px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     margin-bottom: var(--mb-1);
+    cursor: pointer;
 }
 
 .work__title {

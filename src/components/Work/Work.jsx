@@ -8,7 +8,7 @@ const Work = () => {
         <h2 className="section__title">Projetos
             <span className='details__title'>.</span>
         </h2>
-        <span className="section__subtitle"></span>
+        <span className="section__subtitle">Trabalhos Recentes</span>
 
         <Works />
     </section>

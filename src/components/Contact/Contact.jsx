@@ -51,7 +51,7 @@ const Contact = () => {
                         <span className="contact__card-data">+55 &#40;85&#41; 99675-9585</span>
 
                         <a href="https://api.whatsapp.com/send/?phone=5585996759585&text&type=phone_number&app_absent=0" className='contact__button'>
-                            Enviar mensagem{" "}
+                            Entre em contato{" "}
                             <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                         </a>
                     </div>
