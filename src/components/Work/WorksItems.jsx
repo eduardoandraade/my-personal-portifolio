@@ -6,6 +6,9 @@ const WorksItems = ({item}) => {
     window.open(item.href, '_blank')
   };
 
+  const isWixRepo = item.repo.includes('wix');
+  const isShopifyRepo = item.repo.includes('shopify');
+
  
   return (
     <div className="work__card" key={item.id}>
@@ -22,8 +25,15 @@ const WorksItems = ({item}) => {
           </a>
 
           <a href={item.repo} className='work__button' target='_blank' rel="noreferrer">
-            Repositório <i className="bx bxl-github work__button-icon"></i>
-          </a>
+            {isWixRepo ? 'Criado na' : isShopifyRepo ? 'Criado na' : 'Repositório'}
+            {isWixRepo ? (
+            <i class='bx bxl-wix work__button-icon'></i>
+          ) : isShopifyRepo ? (
+            <i class='bx bxl-shopify work__button-icon'></i>
+          ) : (
+            <i className="bx bxl-github work__button-icon"></i>
+          )}
+        </a>
         </div>
         
     </div>
