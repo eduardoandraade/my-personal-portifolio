@@ -4,6 +4,7 @@
     align-items: center;
     column-gap: 0.1rem;
     margin-bottom: var(--mb-2);
+    flex-wrap: wrap;
 }
 
 .work__item {

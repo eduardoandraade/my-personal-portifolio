@@ -153,10 +153,12 @@ img {
 
 /* ====== BREAKPOINT ====== */
 .button {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background: var(--title-color-dark);
     color: var(--container-color);
-    padding: 1.25rem 2rem;
+    padding: 1rem 1.25rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -176,8 +178,6 @@ img {
 }
 
 .button--flex {
-  display: flex;
-  align-items: center;
   max-width: 250px;
 }
 

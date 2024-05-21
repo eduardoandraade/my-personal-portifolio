@@ -11,8 +11,8 @@ const Data = () => {
 
         <p className="home__description">Unir conhecimentos de <span className="highlight">tecnologia</span>, <span className="highlight">design</span> e <span className="highlight">marketing</span> é o meu ponto forte para solucionar problemas de forma criativa. Sou apaixonado pelo que faço e tenho uma dedicação excepcional ao meu trabalho.</p>
 
-        <a href="#contact" className="button button--flex">
-            Entrar em contato 
+        <a href="#projects" className="button button--flex">
+            Ver projetos 
             <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
