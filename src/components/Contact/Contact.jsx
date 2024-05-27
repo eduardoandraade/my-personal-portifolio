@@ -1,109 +1,121 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ReactGA from 'react-ga4'; // Importe o ReactGA
+
 import './contact.css'
 
-
 const Contact = () => {
-
     const form = useRef();
 
     const sendEmail = (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    emailjs
-        .sendForm(
-            'service_he9bx59', 
-            'template_ksoau6o', 
-            form.current, 
-            'AgxYIT4JNmGPXxPeV'
-        )
-        e.target.reset()
+        emailjs
+            .sendForm(
+                'service_he9bx59', 
+                'template_ksoau6o', 
+                form.current, 
+                'AgxYIT4JNmGPXxPeV'
+            )
+            e.target.reset()
     };
 
-  return (
-    <section className="contact section" id="contact">
-        <h2 className="section__title">Contato
-            <span className='details__title'>.</span>
-        </h2>
-        <span className='section__subtitle'>Procura uma presença online criativa? Vamos trabalhar juntos!</span>
+    // Função para enviar evento de clique para o Google Analytics
+    const trackButtonClick = (category, label) => {
+        ReactGA.event({
+            category: category,
+            action: 'Click',
+            label: label
+        });
+    };
 
-        <div className="contact__container container grid">
-            <div className="contact__content">
-                <h3 className='contact__title'>Fale Comigo</h3>
+    return (
+        <section className="contact section" id="contact">
+            <h2 className="section__title">Contato
+                <span className='details__title'>.</span>
+            </h2>
+            <span className='section__subtitle'>Procura uma presença online criativa? Vamos trabalhar juntos!</span>
 
-                <div className="contact__info">
-                    <div className="contact__card">
-                    <i class="uil uil-envelope-upload contact__card-icon"></i>
+            <div className="contact__container container grid">
+                <div className="contact__content">
+                    <h3 className='contact__title'>Fale Comigo</h3>
 
-                        <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">eduardoandraade@outlook.com</span>
+                    <div className="contact__info">
+                        <div className="contact__card">
+                            <i className="uil uil-envelope-upload contact__card-icon"></i>
 
-                        <a href="mailto:eduardoandraade@outlook.com" className='contact__button'>
-                            Me escreva{" "}
-                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
-                        </a>
-                    </div>
+                            <h3 className="contact__card-title">Email</h3>
+                            <span className="contact__card-data">eduardoandraade@outlook.com</span>
 
-                    <div className="contact__card">
-                    <i class="uil uil-whatsapp contact__card-icon"></i>
+                            {/* Adicione o evento de clique para o botão de email */}
+                            <button onClick={() => trackButtonClick('Contact', 'Email Button')} className='contact__button'>
+                                Me escreva{" "}
+                                <i className='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </button>
+                        </div>
 
-                        <h3 className="contact__card-title">WhatsApp</h3>
-                        <span className="contact__card-data">+55 &#40;85&#41; 99675-9585</span>
+                        <div className="contact__card">
+                            <i className="uil uil-whatsapp contact__card-icon"></i>
 
-                        <a href="https://api.whatsapp.com/send/?phone=5585996759585&text&type=phone_number&app_absent=0" className='contact__button'>
-                            Entre em contato{" "}
-                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
-                        </a>
-                    </div>
+                            <h3 className="contact__card-title">WhatsApp</h3>
+                            <span className="contact__card-data">+55 &#40;85&#41; 99675-9585</span>
 
-                    <div className="contact__card">
-                        <i class="uil uil-instagram contact__card-icon"></i>
+                            {/* Adicione o evento de clique para o botão do WhatsApp */}
+                            <button onClick={() => trackButtonClick('Contact', 'WhatsApp Button')} className='contact__button'>
+                                Entre em contato{" "}
+                                <i className='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </button>
+                        </div>
 
-                        <h3 className="contact__card-title">Instagram</h3>
-                        <span className="contact__card-data">@eduardoandraade</span>
+                        <div className="contact__card">
+                            <i className="uil uil-instagram contact__card-icon"></i>
 
-                        <a href="https://instagram.com/eduardoandraade/" className='contact__button'>
-                            Me siga{" "}
-                            <i className='bx bx-right-arrow-alt contact__button-icon'></i>
-                        </a>
+                            <h3 className="contact__card-title">Instagram</h3>
+                            <span className="contact__card-data">@eduardoandraade</span>
+
+                            {/* Adicione o evento de clique para o botão do Instagram */}
+                            <button onClick={() => trackButtonClick('Contact', 'Instagram Button')} className='contact__button'>
+                                Me siga{" "}
+                                <i className='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="contact__content">
-                <h3 className='contact__title'>Escreva sua ideia de projeto</h3>
+                <div className="contact__content">
+                    <h3 className='contact__title'>Escreva sua ideia de projeto</h3>
 
-                <form ref={form} onSubmit={sendEmail} className="contact__form">
-                    <div className="contact__form-div">
-                        <label className="contact__form-tag">Nome</label>
-                        <input 
-                            type="text" 
-                            name='name' 
-                            className='contact__form-input' 
-                            placeholder='Digite seu nome' 
-                        />
-                    </div>
+                    <form ref={form} onSubmit={sendEmail} className="contact__form">
+                        <div className="contact__form-div">
+                            <label className="contact__form-tag">Nome</label>
+                            <input 
+                                type="text" 
+                                name='name' 
+                                className='contact__form-input' 
+                                placeholder='Digite seu nome' 
+                            />
+                        </div>
 
-                    <div className="contact__form-div">
-                        <label className="contact__form-tag">Email</label>
-                        <input 
-                            type="email" 
-                            name='email' 
-                            className='contact__form-input' 
-                            placeholder='Digite seu email' 
-                        />
-                    </div>
+                        <div className="contact__form-div">
+                            <label className="contact__form-tag">Email</label>
+                            <input 
+                                type="email" 
+                                name='email' 
+                                className='contact__form-input' 
+                                placeholder='Digite seu email' 
+                            />
+                        </div>
 
-                    <div className="contact__form-div contact__form-area">
-                        <label className="contact__form-tag">Mensagem</label>
-                        <textarea 
-                            name="project" 
-                            className='contact__form-input' 
-                            cols="30" 
-                            rows="10"
-                            placeholder='Escreva detalhadamente o seu projeto'
-                        ></textarea>
-                    </div>
+                        <div className="contact__form-div contact__form-area">
+                            <label className="contact__form-tag">Mensagem</label>
+                            <textarea 
+                                name="project" 
+                                className='contact__form-input' 
+                                cols="30" 
+                                rows="10"
+                                placeholder='Escreva detalhadamente o seu projeto'
+                            ></textarea>
+                        </div>
 
                     <button className="button button--flex">
                         Enviar Mensagem
