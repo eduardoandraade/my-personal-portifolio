@@ -76,6 +76,10 @@
     height: 4rem;
 }
 
+.contact__form-div.error .contact__form-input {
+    border-color: red;
+}
+
 .contact__form-input {
     position: absolute;
     top: 0;
