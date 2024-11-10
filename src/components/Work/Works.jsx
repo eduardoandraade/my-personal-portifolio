@@ -66,7 +66,7 @@ const Works = () => {
       </div>
 
       {loadMoreButtonVisible && (
-        <button onClick={handleLoadMore} className="load-more-button button button--flex work__button" style={{ margin: 'auto', marginTop: '20px' }}>
+        <button onClick={handleLoadMore} className="load-more-button button button--flex work__buttons" style={{ margin: 'auto', marginTop: '20px' }}>
           Carregar Mais
         </button>
       )}

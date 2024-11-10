@@ -54,7 +54,14 @@
 }
 
 .work__button {
-    color: var(--text-color);
+    color: var(--title-color);
+    font-size: var(--smaller-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+.work__buttons {
+    
     font-size: var(--smaller-font-size);
     display: flex;
     align-items: center;
