@@ -36,6 +36,12 @@
     transition: .3s;
 }
 
+.nav__link--contact {
+  text-decoration: overline;
+  text-decoration-color: #83B2FF;
+  text-decoration-style: wavy;
+}
+
 .nav__icon, 
 .nav__close,
 .nav__toggle {
@@ -84,16 +90,27 @@
     bottom: 0;
   }
 
+  .nav__link {
+    display: flex;
+    flex-direction: row; /* Torna o layout horizontal */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem; /* Espaço entre o ícone e o texto */
+    font-size: var(--small-font-size);
+  }
+
 
 
   .nav__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column; /* Deixe o layout como coluna */
+    align-items: center;
+    gap: 1rem; /* Ajuste o espaçamento entre os itens */
   }
 
   .nav__icon {
     font-size: 1.2rem;
+    color: var(--title-color);
   }
 
   .nav__close {

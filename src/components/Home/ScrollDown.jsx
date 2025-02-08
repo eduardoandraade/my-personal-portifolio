@@ -42,7 +42,7 @@ const ScrollDown = () => {
                 ></path>
         </svg>
 
-        <span className="home__scroll-name">conheça meus projetos</span>
+        <span className="home__scroll-name">veja meus trabalhos</span>
         <i className="uil uil-arrow-down home__scroll-arrow"></i>
         </a>
     </div>
